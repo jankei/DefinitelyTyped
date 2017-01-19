@@ -8,7 +8,7 @@
 declare module 'redux-mock-store' {
     import * as Redux from 'redux'
 
-    function createMockStore<T>(middlewares?: Redux.Middleware[]): mockStore<T>;
+    function createMockStore<T>(middlewares?: Redux.IMiddleware<T>[]): mockStore<T>;
 
     export type mockStore<T> = (state?: T) => IStore<T>;
 
