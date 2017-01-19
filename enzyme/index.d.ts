@@ -5,7 +5,7 @@
 
 import { ReactElement, Component, StatelessComponent, ComponentClass, HTMLAttributes as ReactHTMLAttributes, SVGAttributes as ReactSVGAttributes } from "react";
 
-type HTMLAttributes = ReactHTMLAttributes<any> & ReactSVGAttributes<any>;
+type HTMLAttributes = ReactHTMLAttributes & ReactSVGAttributes;
 
 export class ElementClass extends Component<any, any> {
 }
